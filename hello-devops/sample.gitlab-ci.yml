@@ -4,6 +4,6 @@ test-job:
   stage: test
   script:
     - echo "installing node.js"
-    - apt-get update && apt-get install -ynodejs npm
+    - apt-get update && apt-get install -y nodejs npm
     - npm install
     - npm test  
